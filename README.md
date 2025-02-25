@@ -51,7 +51,7 @@ need to config dagshub --remote--expirements
 
   dvc init 
   want to track the raw data
-  dvc add data/raw/data.csv
+  dvc add data\raw\data.csv
   git add data\raw\data.csv.dvc
   git add data\raw\.gitignore
 

@@ -32,3 +32,10 @@ stages:
     - src/evaluate.py
     outs:
     - results/evaluation_report.json
+  deploy:
+    cmd: streamlit run .\src\app.py
+    deps:
+    - models/model.pkl
+    - src/app.py
+    outs:
+    - results/deployment_report.txt
